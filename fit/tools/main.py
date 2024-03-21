@@ -103,8 +103,8 @@ if __name__ == "__main__":
     file_num = 0
     for root, dirs, files in os.walk(cfg.DATASET.PATH):
         for file in sorted(files):
-            if not 'baseball_swing' in file:
-                continue
+            # if not 'baseball_swing' in file:
+            #     continue
             file_num += 1
             logger.info(
                 'Processing file: {}    [{} / {}]'.format(file, file_num, len(files)))
